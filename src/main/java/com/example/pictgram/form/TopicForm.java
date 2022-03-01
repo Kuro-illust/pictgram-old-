@@ -12,12 +12,15 @@ import com.example.pictgram.validation.constraints.ImageNotEmpty;
 
 import lombok.Data;
 
+
+
 @Data
 public class TopicForm {
 
     private Long id;
 
     private Long userId;
+    
 
     @ImageNotEmpty
     @ImageByte(max = 2000000)
@@ -33,4 +36,8 @@ public class TopicForm {
 
     private UserForm user;
 
+    private List<FavoriteForm> favorites;
+
+    private FavoriteForm favorite;
 }
+

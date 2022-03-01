@@ -1,7 +1,7 @@
 spring:
   mvc:
-   hiddenmethod:
-    filter:
+    hiddenmethod:
+      filter:
         enabled: true
   servlet:
     multipart:
